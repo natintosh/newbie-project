@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Newbie</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_menu_action_explore">Explore</string>
+    <string name="nav_menu_action_trends">Trends</string>
+    <string name="nav_menu_action_search">Search</string>
+    <string name="nav_menu_action_library">Library</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

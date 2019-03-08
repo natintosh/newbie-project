@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.natinc.nat.newbie.MainActivity">
+    <item
+        android:id="@+id/exploreFragment"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/nav_menu_action_explore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/trendsFragment"
+        android:icon="@drawable/ic_trending_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/nav_menu_action_trends"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/nav_menu_action_search"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/libraryFragment"
+        android:icon="@drawable/ic_library_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/nav_menu_action_library"
+        app:showAsAction="never" />
+</menu>

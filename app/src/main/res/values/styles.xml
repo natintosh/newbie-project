@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+    <style name="Theme.Newbie" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme.Newbie.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Newbie.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="Theme.Newbie.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+    <style name="Widget.Newbie.Toolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:theme">@style/Theme.Newbie</item>
+        <item name="android:popupTheme">@style/AppTheme.PopupOverlay</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Newbie.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.Newbie.Toolbar" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/comfortaa</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.Newbie.TitleHeader" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/comfortaa</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+</resources>
