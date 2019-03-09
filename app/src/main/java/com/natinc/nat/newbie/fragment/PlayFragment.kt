@@ -1,4 +1,4 @@
-package com.natinc.nat.newbie
+package com.natinc.nat.newbie.fragment
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.natinc.nat.newbie.R
 
 
 class PlayFragment : Fragment() {
