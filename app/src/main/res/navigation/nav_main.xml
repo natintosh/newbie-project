@@ -89,6 +89,12 @@
     <fragment android:id="@+id/downloadsFragment" android:name="com.natinc.nat.newbie.fragment.DownloadsFragment"
               android:label="fragment_downloads" tools:layout="@layout/fragment_downloads"/>
     <fragment android:id="@+id/playlistFragment" android:name="com.natinc.nat.newbie.fragment.PlaylistFragment"
-              android:label="fragment_playlist" tools:layout="@layout/fragment_playlist"/>
+              android:label="fragment_playlist" tools:layout="@layout/fragment_playlist">
+        <action android:id="@+id/action_playlistFragment_to_playFragment" app:destination="@id/playFragment"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment android:id="@+id/playFragment" android:name="com.natinc.nat.newbie.fragment.PlayFragment"
+              android:label="fragment_play" tools:layout="@layout/fragment_play"/>
 
 </navigation>

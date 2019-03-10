@@ -129,18 +129,18 @@ class CircularImageView : ImageView {
     @JvmOverloads
     constructor(context: Context, attrs: AttributeSet, defStyle: Int = 0) : super(context, attrs, defStyle) {
 
-        val a = context.obtainStyledAttributes(attrs, R.styleable.CircleImageView, defStyle, 0)
+        val a = context.obtainStyledAttributes(attrs, R.styleable.CircularImageView, defStyle, 0)
 
-        mBorderWidth = a.getDimensionPixelSize(R.styleable.CircleImageView_civ_border_width, DEFAULT_BORDER_WIDTH)
-        mBorderColor = a.getColor(R.styleable.CircleImageView_civ_border_color, DEFAULT_BORDER_COLOR)
-        mBorderOverlay = a.getBoolean(R.styleable.CircleImageView_civ_border_overlay, DEFAULT_BORDER_OVERLAY)
+        mBorderWidth = a.getDimensionPixelSize(R.styleable.CircularImageView_civ_border_width, DEFAULT_BORDER_WIDTH)
+        mBorderColor = a.getColor(R.styleable.CircularImageView_civ_border_color, DEFAULT_BORDER_COLOR)
+        mBorderOverlay = a.getBoolean(R.styleable.CircularImageView_civ_border_overlay, DEFAULT_BORDER_OVERLAY)
 
         // Look for deprecated civ_fill_color if civ_circle_background_color is not set
-        if (a.hasValue(R.styleable.CircleImageView_civ_circle_background_color)) {
-            mCircleBackgroundColor = a.getColor(R.styleable.CircleImageView_civ_circle_background_color,
+        if (a.hasValue(R.styleable.CircularImageView_civ_circle_background_color)) {
+            mCircleBackgroundColor = a.getColor(R.styleable.CircularImageView_civ_circle_background_color,
                     DEFAULT_CIRCLE_BACKGROUND_COLOR)
-        } else if (a.hasValue(R.styleable.CircleImageView_civ_fill_color)) {
-            mCircleBackgroundColor = a.getColor(R.styleable.CircleImageView_civ_fill_color,
+        } else if (a.hasValue(R.styleable.CircularImageView_civ_fill_color)) {
+            mCircleBackgroundColor = a.getColor(R.styleable.CircularImageView_civ_fill_color,
                     DEFAULT_CIRCLE_BACKGROUND_COLOR)
         }
 
