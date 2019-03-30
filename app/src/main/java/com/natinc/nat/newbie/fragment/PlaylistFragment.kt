@@ -41,7 +41,7 @@ class PlaylistFragment : Fragment() {
             title = "Cardi B"
             val activity: AppCompatActivity = activity as AppCompatActivity
             activity.setSupportActionBar(toolbar)
-            navigationIcon = AppCompatResources.getDrawable(context!!, R.drawable.ic_chevron_left_black_24dp)
+            navigationIcon = AppCompatResources.getDrawable(context!!, R.drawable.ic_chevron_left_black_48dp)
             setNavigationOnClickListener {
                 it.findNavController().navigateUp()
             }

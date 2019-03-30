@@ -1,19 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_tiles_bg"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".fragment.PlayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:id="@+id/playFragmentDrawerLayout"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:background="@drawable/play_curve_surface"
+        android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        android:text="@string/hello_blank_fragment" />
+        android:gravity="end">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playFragmentPlaylistRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/nb_player_playlist_item" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_tiles_bg"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="@style/Widget.Newbie.Toolbar.PlayToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:elevation="0dp"
+            tools:showIn="@layout/fragment_explore">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:buttonGravity="bottom"
+                app:menu="@menu/menu_play_drawer"
+                app:navigationIcon="@drawable/ic_chevron_left_black_48dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="217dp"
+                android:layout_height="217dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_tiles_bg" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/play_curve_surface"
+            android:text="@string/hello_blank_fragment">
+
+            <com.natinc.nat.newbie.ui.PlayerActionView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

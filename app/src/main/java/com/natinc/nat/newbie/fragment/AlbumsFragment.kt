@@ -34,7 +34,7 @@ class AlbumsFragment : Fragment() {
         val typeface = ResourcesCompat.getFont(context!!, R.font.comfortaa)
 
         toolbar.apply {
-            navigationIcon = AppCompatResources.getDrawable(context!!, R.drawable.ic_chevron_left_black_24dp)
+            navigationIcon = AppCompatResources.getDrawable(context!!, R.drawable.ic_chevron_left_black_48dp)
             setNavigationOnClickListener {
                 it.findNavController().navigateUp()
             }

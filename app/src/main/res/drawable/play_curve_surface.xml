@@ -4,10 +4,10 @@
     <item
         android:bottom="-90dp"
         android:top="0dp"
-        android:left="-120dp"
-        android:right="-120dp">
+        android:left="-150dp"
+        android:right="-150dp">
         <shape android:shape="oval">
-            <solid android:color="@color/colorTranslucentWhite" />
+            <solid android:color="@color/colorTranslucentGlassFeel" />
         </shape>
     </item>
 
